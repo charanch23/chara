@@ -41,7 +41,8 @@ const PROVIDER = (process.env.PROVIDER || 'huggingface').toLowerCase();
 const HF_TOKEN = process.env.HUGGINGFACE_API_TOKEN;
 
 // default model — change if you prefer another HF model (see note below)
-const HF_MODEL = 'stabilityai/stable-diffusion-2';
+// new working model on Hugging Face Inference Router
+const HF_MODEL = 'black-forest-labs/FLUX.1-schnell'; // fast, realistic, free-tier
 
 if (PROVIDER !== 'huggingface') {
   console.warn('Configured provider is not huggingface. Set PROVIDER=huggingface in env.');
