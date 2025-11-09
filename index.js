@@ -52,7 +52,7 @@ if (!HF_TOKEN) {
 
 // Helper to call Hugging Face Inference
 async function callHuggingFaceModel(model, prompt, options = {}) {
-  const url = `https://api-inference.huggingface.co/models/${encodeURIComponent(model)}`;
+ const url = `https://router.huggingface.co/hf-inference/models/${encodeURIComponent(model)}`;
 
   // HF accepts JSON: { inputs: prompt, options: { wait_for_model: true }, parameters: {...} }
   // Some image models accept 'width'/'height' in parameters.
