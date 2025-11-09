@@ -1,7 +1,6 @@
 {
-  "name": "ai-image-backend",
+  "name": "ai-image-backend-hf",
   "version": "1.0.0",
-  "description": "Proxy backend to generate images via OpenAI Images API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -20,6 +19,6 @@
   },
   "engines": {
     "node": "18.x"
-  },
-  "license": "MIT"
+  }
 }
+
